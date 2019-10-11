@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Work+Sans&display=swap');
+
+:root {
+    --background-color-theme:  #2e2e2e;
+    --color-theme: #fff;
+    --grey-color-theme: #000;
+    --footer-background-color-theme: #1d2c2f;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2{
+    font-family: 'Lora', serif;
+    font-size: 4vw;
+}
+
+#hero{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#hero div{
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero img{
+    width: 60%;
+}
+
+nav{
+    background-color: var(--background-color-theme);
+    color: var(--color-theme);
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+nav div{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* story */
+
+#story {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    background-color: var(--background-color-theme);
+    color: var(--color-theme);
+}
+
+#story div{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1vw;
+}
+
+#story img{
+    width: 60%;
+}
+
+/* contact */
+
+#contact {
+    display: flex;
+    height: 80vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    background-color: var(--background-color-theme);
+    color: var(--color-theme); 
+}
+
+#contact .form{
+    margin-top: 2vw;
+    width: 40%;
+    height: 60vh;  
+}
+
+#contact div{
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 1vw;
+}
+
+input[type=text], textarea {
+    width: 100%; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea{
+    height: 50px;
+}
+  
+  /* Style the submit button with a specific background color etc */
+  /* input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* gallery */
+
+.gallery-section{
+    text-align: center;
+    color: var(--grey-color-theme);
+}
+
+.gallery-section h3{
+    margin-top: 0;
+    padding-top: 5%;
+}
+
+.gallery-section p{
+    /* padding: 5% 0; */
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 3vw;
+    margin: 5vw 0;
+}
+
+.gallery div{
+    width: 28vw;
+    /* height: 20vw; */
+}
+.gallery img{
+    max-height: 240px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.img-container{
+    position: relative;
+    max-height: 240px;
+    padding: 0;
+    margin: 0;
+}
+
+.img-container-content{
+    transition: 0.4s ease;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    color: white;
+    opacity: 0;
+    text-align: center;
+}
+
+.show-img-content{
+    opacity: 1;
+}
+
+.dimm-img{
+    opacity: 0.7;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--footer-background-color-theme);
+    color: var(--color-theme);
+    padding: 0 1vw;
+    
+}
+
+footer #footer-list{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
